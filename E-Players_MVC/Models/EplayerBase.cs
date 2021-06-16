@@ -14,7 +14,7 @@ namespace E_Players_MVC.Models
                 Directory.CreateDirectory(pasta);
             }
 
-            if (File.Exists(_caminho))
+            if (!File.Exists(_caminho))
             {
                 File.Create(_caminho).Close();
             }
