@@ -9,10 +9,10 @@
 
 <form method="POST" action='@Url.Action("Cadastrar")'>
     <label>ID Jogador</label>
-    <input type="text" name="IdJogador">
+    <input type="text" name="IdJogador" required>
 
     <label>ID Equipe</label>
-    <input type="text" name="IdEquipe">
+    <input type="text" name="IdEquipe" required>
 
     <label>Nome</label>
     <input type="text" name="Nome">
@@ -44,6 +44,7 @@
                 <td>@jogador.Nome</td>
                 <td>@jogador.Email</td>
                 <td>@jogador.Senha</td>
+                <td><a asp-area= "" asp-controller="Jogador" asp-action="Deletar" asp-route-id="@jogador.Idjogador">EXCLUIR</a></td>
             </tr>
         }
 

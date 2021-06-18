@@ -43,7 +43,7 @@ namespace E_Players_MVC.Models
         {
             List<string> linhas = LerTodasLinhasCSV(CAMINHO);
             // 1;nome;Caminho da imagem 
-            linhas.RemoveAll(x => x.Split(";")[0] == IdEquipe.ToString());
+            linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
             ReescreverCSV(CAMINHO,linhas);
         }
 

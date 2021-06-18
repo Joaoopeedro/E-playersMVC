@@ -54,7 +54,7 @@ namespace E_Players_MVC.Models
                 // email jogador
                 jogador.Email = linha[2];
                 // senha jogador
-                jogador.Senha = linha[3];
+                jogador.Senha = "****...";
                 // id equipe
                 jogador.IdEquipe = Int32.Parse(linha[4]) ;
 
@@ -74,7 +74,7 @@ namespace E_Players_MVC.Models
         public void Deletar(int id)
         {
             List<string> linhas = LerTodasLinhasCSV(CAMINHO);
-            linhas.RemoveAll(x => x.Split(";")[0] == Idjogador.ToString());
+            linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
             ReescreverCSV(CAMINHO, linhas);
         }
     }

@@ -7,16 +7,16 @@
     <h1>Cadastro de @ViewData["Title"]</h1>
 </div>
 
-<form method="POST" action='@Url.Action("Cadastrar")'>
+<form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
 
     <label >ID</label>
-    <input type="text" name="IdEquipe">
+    <input type="text" name="IdEquipe" required>
 
     <label>Nome</label>
     <input type="text" name="Nome">
 
     <label>Imagem</label>
-    <input type="text" name="Imagem">
+    <input type="file" name="Imagem">
 
     <button type="submit">CADASTRAR</button>
 </form>
@@ -34,7 +34,8 @@
             <tr>
                 <td>@equipe.IdEquipe</td>
                 <td>@equipe.Nome</td>
-                <td>@equipe.Imagem</td>
+                <td><img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px"></td>
+                <td><a asp-area= "" asp-controller="Equipe" asp-action="Deletar" asp-route-id="@equipe.IdEquipe">EXCLUIR</a></td>
             </tr>
         }
     </tbody>

@@ -32,5 +32,12 @@ namespace E_Players_MVC.Controllers
 
             return LocalRedirect("~/Jogador/Listar");
         }
+
+        [Route("Deletar/{id}")]
+        public IActionResult Deletar(int id){
+            jogadorModel.Deletar(id);
+            ViewBag.Jogadores = jogadorModel.LerTodas();
+            return LocalRedirect("~/Jogador/Listar");
+        }
     }
 }
