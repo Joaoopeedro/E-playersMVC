@@ -1,43 +1,87 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - E_Players_MVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/estilo.css" />
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_Players_MVC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="conteiner conteiner_header">
+            <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">
+
+                <img class="img_header" src="/imagens/logo e-player.png" alt="#">
+            </a>
+            <nav class="nav_header">
+                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Inicio</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Horario</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Campeonato</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Resultados</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Noticias</a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - E_Players_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer>
+        <div class="conteiner organizaçao-footer">
+            <div class="alinhamento_nav">
+                <nav class="nav_links-uteis">
+                    <span> Links Úteis</span>
+                    <ul class="lista_footer">
+                        <li> <a href="">Regras de utilização</a> </li>
+                        <li> <a href="#">Suporte</a> </li>
+                        <li> <a href="#">Central de ajuda</a> </li>
+                        <li> <a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <nav class="paginas">
+                    <span> Pagínas</span>
+                    <ul class="lista_footer">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index"
+                                target="_parent">Inicio</a> </li>
+                        <li> <a asp-area="" asp-controller="Home" asp-action="Index"
+                                target="_parent">Campeonato</a></li>
+                        <li> <a asp-area="" asp-controller="Home" asp-action="Index"
+                                target="_parent">Resultados</a> </li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index"
+                                target="_parent">Notícias</a> </li>
+                        <li><a asp-area="" asp-controller="Jogador" asp-action="Index">Login/cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent" class=" logo_footer"> <img
+                    src="/imagens/logo e-player.png" alt=""> </a>
+            <div class="cadastro">
+                <span> Faça parte do nosso clan,assine nossa newsletter!</span>
+                <div class="barra-de-cadastro">
+                    <input type="email">
+                    <a asp-area="" asp-controller="Jogador" asp-action="Index">
+                        <button> cadastrar</button>
+                    </a>
+                </div>
+                <nav class="nav_redes_sociais">
+                    <span>Siga-nos em:</span>
+
+                    <a href="">
+                        <img src="/imagens/instagram 1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/imagens/facebook 1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/imagens/youtube 1.png" alt="">
+                    </a>
+                </nav>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -45,4 +89,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
