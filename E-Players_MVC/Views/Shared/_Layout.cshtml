@@ -22,6 +22,18 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Campeonato</a>
                 <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Resultados</a>
                 <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Noticias</a>
+                @if (ViewBag.Username != null)
+                {
+                    <li style="color: white;">Olá @ViewBag.Username</li>
+                    <li> <a asp-area="" asp-controller="Login" asp-action="Logout">Logout</a></li>
+                }
+                else
+                {
+                    
+                    <a asp-area="" asp-controller="Login" asp-action="Index" target="_parent">Login</a>
+                    
+                }
+
             </nav>
         </div>
     </header>
@@ -46,14 +58,12 @@
                 <nav class="paginas">
                     <span> Pagínas</span>
                     <ul class="lista_footer">
-                        <li><a asp-area="" asp-controller="Home" asp-action="Index"
-                                target="_parent">Inicio</a> </li>
-                        <li> <a asp-area="" asp-controller="Home" asp-action="Index"
-                                target="_parent">Campeonato</a></li>
-                        <li> <a asp-area="" asp-controller="Home" asp-action="Index"
-                                target="_parent">Resultados</a> </li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Index"
-                                target="_parent">Notícias</a> </li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Inicio</a> </li>
+                        <li> <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Campeonato</a>
+                        </li>
+                        <li> <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Resultados</a>
+                        </li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Notícias</a> </li>
                         <li><a asp-area="" asp-controller="Jogador" asp-action="Index">Login/cadastro</a></li>
                     </ul>
                 </nav>

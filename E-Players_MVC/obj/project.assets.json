@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\dev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-Players_MVC\\E-Players_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj",
       "projectName": "E-Players_MVC",
-      "projectPath": "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-Players_MVC\\E-Players_MVC.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-Players_MVC\\obj\\",
+      "projectPath": "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj",
+      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

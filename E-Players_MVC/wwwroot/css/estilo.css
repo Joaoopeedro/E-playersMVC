@@ -59,6 +59,10 @@ header{
     
 }
 
+.erro{
+    color: red;
+}
+
    /*MAIN  */
  
 main{
@@ -837,3 +841,6 @@ footer{
     font-family: 'Titillium Web' , sans-serif;
     font-weight: bold;
 }
+
+
+/* Login */
