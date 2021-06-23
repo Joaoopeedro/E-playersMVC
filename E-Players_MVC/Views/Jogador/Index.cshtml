@@ -1,3 +1,4 @@
+@using Microsoft.AspNetCore.Http
 @model Jogador
 @{
     ViewData["Title"] = "Jogadores";
@@ -33,7 +34,7 @@
         </div>
         <div>
             <table class="tabela" style="width:770px">
-                <thead class = "tabela_1">
+                <thead class="tabela_1">
                     <th>ID Jogador</th>
                     <th>ID Equipe</th>
                     <th>Nome</th>
@@ -49,8 +50,12 @@
                             <td>@jogador.Nome</td>
                             <td>@jogador.Email</td>
                             <td>@jogador.Senha</td>
-                            <td class="deletar"><a asp-area="" asp-controller="Jogador" asp-action="Deletar"
+                            @if (jogador.Nome == ViewBag.Username)
+                            {
+
+                                <td class="deletar"><a asp-area="" asp-controller="Jogador" asp-action="Deletar"
                                 asp-route-id="@jogador.Idjogador">EXCLUIR</a></td>
+                            }
                         </tr>
                     }
 

@@ -13,14 +13,18 @@ namespace E_Players_MVC.Controllers
         Equipe equipeModel = new Equipe();
 
         [Route("Listar")]
-        public IActionResult Index(){
+        public IActionResult Index()
+        {
 
             ViewBag.Equipes = equipeModel.LerTodas();
+            ViewBag.Username = HttpContext.Session.GetString("_UserName");
+
             return View();
         }
 
         [Route("Cadastrar")]
-        public IActionResult Cadastrar(IFormCollection form){
+        public IActionResult Cadastrar(IFormCollection form)
+        {
             Equipe novaEquipe = new Equipe();
             novaEquipe.IdEquipe = Int32.Parse(form["IdEquipe"]);
             novaEquipe.Nome = form["Nome"];
@@ -44,9 +48,10 @@ namespace E_Players_MVC.Controllers
                     file.CopyTo(stream);
                 }
                 novaEquipe.Imagem = file.FileName;
-            }else
+            }
+            else
             {
-               novaEquipe.Imagem = "padrao.png" ;
+                novaEquipe.Imagem = "padrao.png";
             }
 
             // upload Final
@@ -59,7 +64,8 @@ namespace E_Players_MVC.Controllers
 
 
         [Route("Deletar/{id}")]
-        public IActionResult Deletar(int id){
+        public IActionResult Deletar(int id)
+        {
             equipeModel.Deletar(id);
             ViewBag.Equipes = equipeModel.LerTodas();
             return LocalRedirect("~/Equipe/Listar");

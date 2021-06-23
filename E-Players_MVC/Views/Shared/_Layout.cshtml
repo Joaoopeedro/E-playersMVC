@@ -18,10 +18,10 @@
             </a>
             <nav class="nav_header">
                 <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Inicio</a>
-                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Horario</a>
-                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Campeonato</a>
-                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Resultados</a>
-                <a asp-area="" asp-controller="Home" asp-action="Index" target="_parent">Noticias</a>
+                <a href="#Horario"   target="_parent">Horario</a>
+                <a href="#Campeonato"  target="_parent">Campeonato</a>
+                <a href="#Resultado"  target="_parent">Resultados</a>
+                <a href="#Noticias"  target="_parent">Noticias</a>
                 @if (ViewBag.Username != null)
                 {
                     <li style="color: white;">Olá @ViewBag.Username</li>
@@ -81,13 +81,13 @@
                 <nav class="nav_redes_sociais">
                     <span>Siga-nos em:</span>
 
-                    <a href="">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <img src="/imagens/instagram 1.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://pt-br.facebook.com/" target="_blank">
                         <img src="/imagens/facebook 1.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/" target="_blank">
                         <img src="/imagens/youtube 1.png" alt="">
                     </a>
                 </nav>

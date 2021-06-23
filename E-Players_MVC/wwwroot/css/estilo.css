@@ -93,6 +93,11 @@ main{
 
 }
 
+/* .organizacao-botao_1 a:hover{
+    background-color:white;
+} */
+
+
 .botao{
     /* height: 45px; */
     /* width: 200px; */
@@ -104,9 +109,13 @@ main{
     margin-top: 17vw;
     border-radius: 10px;
     text-decoration: none;
-    font-weight: bold;
-    
-    
+    font-weight: bold;  
+}
+.botao:hover{
+    color: rgb(0, 26, 255);
+    text-decoration: none;
+    background-color:rgb(255, 255, 255);
+    scale: 1.1;
 }
 
 .botao_2{
@@ -120,6 +129,12 @@ main{
     text-decoration: none;
     font-weight: bold;
     
+}
+.botao_2:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color:white;
+    scale: 1.1;
 }
 
 .banner_parcerias{
@@ -490,7 +505,7 @@ footer{
 .conteiner_central{
     background-color: #1E1C21;
     Width: 100%;
-    Height : 860px;
+    Height : 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,6 +515,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 50px;
 }
 
 .dados{
@@ -559,7 +575,7 @@ footer{
 .dados_h2{
     color: white;
     margin: 34px 20em;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Titillium Web' , sans-serif;
     font-weight: bold;
 
@@ -569,7 +585,7 @@ footer{
 .tabela{
     
     width:770px;
-    height: 231px;
+    height: unset;
     box-shadow: 1px 1px 20px 4px #000000;
     border: solid rgb(255, 255, 255);
     border-collapse: collapse;
@@ -773,7 +789,7 @@ footer{
 .conteiner-central{
     background-color: #1E1C21;
     
-    Height :1100px;
+    Height :100%;
 }
 
 .informacoes-dados{
@@ -783,6 +799,7 @@ footer{
     align-items: center;
     height: 100%;
     justify-content: space-evenly;
+    padding: 50px;
 }
 
 .email{
@@ -837,7 +854,7 @@ footer{
 .dados-h2{
     color: white;
     margin: 34px 20em;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Titillium Web' , sans-serif;
     font-weight: bold;
 }

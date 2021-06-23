@@ -14,6 +14,7 @@ namespace E_Players_MVC.Controllers
         [Route("Listar")]
         public IActionResult Index(){
             ViewBag.Jogador = jogadorModel.LerTodas();
+            ViewBag.Username = HttpContext.Session.GetString("_UserName");
             return View();
         }
 
@@ -37,7 +38,8 @@ namespace E_Players_MVC.Controllers
         public IActionResult Deletar(int id){
             jogadorModel.Deletar(id);
             ViewBag.Jogadores = jogadorModel.LerTodas();
-            return LocalRedirect("~/Jogador/Listar");
+            HttpContext.Session.Remove("_UserName");
+            return LocalRedirect("~/");
         }
     }
 }
