@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj": {}
+    "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj": {
+    "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj",
         "projectName": "E-Players_MVC",
-        "projectPath": "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev\\Desktop\\E-playersMVC\\E-Players_MVC\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-playersMVC\\E-Players_MVC\\E-Players_MVC.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\backend_2-POO\\exercicio_aula_15.06-E-16.06\\E-playersMVC\\E-Players_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
